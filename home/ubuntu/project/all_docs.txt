@@ -1,0 +1,100 @@
+    • Value Propositions:
+        ◦ Homeownership: Opportunity to build equity.
+        ◦ Shared Amenities: Gym, pool, common areas, often professionally managed.
+        ◦ Location: Typically in desirable urban or amenity-rich areas.
+        ◦ Lower Maintenance Responsibility: Compared to single-family homes (exterior and common areas managed).
+    • Channels:
+        ◦ Real Estate Agents/Brokers: Specializing in condo/co-op sales.
+        ◦ Online Listing Platforms: Similar to single-family homes.
+        ◦ Direct Marketing: Open houses, community events.
+    • Customer Relationships:
+        ◦ Sales Process: Similar to single-family homes.
+        ◦ Homeowners Association (HOA) Management: Ongoing relationship with the governing body.
+        ◦ Community Management: Addressing resident concerns and managing common areas.
+    • Revenue Streams:
+        ◦ Sales Revenue: Sale price of the unit.
+        ◦ HOA Fees: Monthly or annual fees paid by owners.
+    • Key Resources:
+        ◦ Condo/Co-op Buildings: Individual units within a larger structure.
+        ◦ Common Areas and Amenities: Shared facilities.
+        ◦ Property Management Teams: HOA management.
+    • Key Activities:
+        ◦ Development/Construction: Similar to multifamily, with a focus on individual unit ownership structure.
+        ◦ Sales and Marketing: Targeting individual buyers.
+        ◦ HOA Management: Establishing and managing the homeowners association.
+    • Key Partnerships:
+        ◦ HOA Management Companies: If outsourced.
+        ◦ Lenders: Providing mortgages for condo/co-op purchases.
+    • Cost Structure:
+        ◦ Development/Construction Costs: Similar to multifamily.
+        ◦ Marketing and Sales Expenses: Targeting individual buyers.
+        ◦ HOA Management Costs: Maintaining common areas and amenities.
+Townhouses & Vacation Homes
+    • Follow a similar structure, tailoring the parameters within each BMC element to the specific characteristics and target markets of townhouses (attached single-family homes often with shared walls) and vacation homes (properties used primarily for recreational purposes in tourist destinations). Consider factors like shared walls for townhouses affecting Value Propositions and Cost Structure (e.g., shared insurance), and seasonality for vacation homes impacting Customer Segments, Revenue Streams (e.g., peak season pricing), and Key Activities (e.g., seasonal maintenance).
+Self-Storage Facilities & Education (Residential Aspects)
+    • Tailor the BMC elements to the specific value provided by self-storage (storage space for personal belongings - Customer Segments: individuals moving, decluttering, etc.; Revenue Streams: rental fees for units) and the residential aspects of educational facilities (housing for students - Customer Segments: enrolled students; Value Propositions: convenient and affordable housing near campus; Revenue Streams: dormitory fees).
+
+2. COMMERCIAL
+1. Office
+    • Customer Segments:
+        ◦ Parameters: Company size (number of employees, annual revenue), industry sector (categorical), preferred lease duration (in years), space requirements (square footage, open plan %, specialized infrastructure needs - yes/no), budget for lease rates (USD/sqft/year), location preference (CBD, suburban, proximity to public transport (miles)).
+    • Value Propositions:
+        ◦ Parameters: Lease flexibility (short-term options - yes/no, break clauses), location grade (Class A, B, C - categorical), building amenities (number of conference rooms, presence of gym - yes/no, high-speed internet bandwidth (Mbps), energy efficiency certifications (LEED level - categorical), security features (number of access points), collaborative space %).
+    • Channels:
+        ◦ Parameters: Brokerage fees (% of lease value), online listing impressions (number), direct marketing spend (USD), networking event participation (number/year).
+    • Customer Relationships:
+        ◦ Parameters: Tenant satisfaction score (1-5 scale), lease renewal rate (%), response time to maintenance requests (hours), community events (number/year).
+    • Revenue Streams:
+        ◦ Parameters: Average rental rate (USD/sqft/year), service charge (USD/sqft/year), parking revenue per space (USD/month), ancillary service revenue (USD/year).
+    • Key Resources:
+        ◦ Parameters: Building quality (rating 1-5), land size (sqft), financial leverage (debt-to-equity ratio), property management staff ratio (employees/sqft), leasing agent effectiveness (leases signed/year).
+    • Key Activities:
+        ◦ Parameters: Acquisition cost (USD), development timeline (months), leasing velocity (sqft leased/month), tenant retention rate (%), maintenance cost (USD/sqft/year).
+    • Key Partnerships:
+        ◦ Parameters: Number of active brokerage relationships, contractor bid competitiveness (average % above/below estimate), loan interest rate (%), property management fee (% of revenue).
+    • Cost Structure:
+        ◦ Parameters: Land acquisition cost (USD), construction cost (USD/sqft), mortgage interest expense (USD/year), property tax rate (%), insurance cost (USD/year), operating expenses (USD/sqft/year), marketing spend (USD/year), leasing commissions (%).
+3. Retail
+    • Customer Segments:
+        ◦ Parameters: Retailer type (local/national chain - categorical), tenant size (sqft), target consumer demographics (age, income - measurable), foot traffic (number/day), co-tenancy requirements (specific brands needed - categorical).
+    • Value Propositions:
+        ◦ Parameters: Visibility score (based on location attributes), storefront appeal (rating 1-5), proximity to anchor tenants (distance in feet), space configuration flexibility (adaptability score 1-5), property management responsiveness (rating 1-5).
+    • Channels:
+        ◦ Parameters: Broker outreach effectiveness (leads generated/spend), online listing views (number), direct outreach success rate (%), participation in retail events (number/year).
+    • Customer Relationships:
+        ◦ Parameters: Tenant satisfaction score (1-5), lease renewal rate (%), marketing support provided (USD/year), tenant collaboration level (rating 1-5).
+    • Revenue Streams:
+        ◦ Parameters: Base rental rate (USD/sqft/year), percentage rent (% of sales above breakpoint), CAM charges (USD/sqft/year), signage/advertising fees (USD/year).
+    • Key Resources:
+        ◦ Parameters: Property size (sqft), location traffic count (number/day), financial stability (rating 1-5), leasing team experience (years).
+    • Key Activities:
+        ◦ Parameters: Site selection score (from MCDA), financing secured (amount USD), leasing rate (% of space leased/month), property maintenance cost (USD/sqft/year), tenant improvement allowance (USD/sqft).
+    • Key Partnerships:
+        ◦ Parameters: Number of active retailer relationships, brokerage agreement terms (%), anchor tenant commitment (lease duration in years), property management cost (% of revenue).
+    • Cost Structure:
+        ◦ Parameters: Land cost (USD), construction cost (USD/sqft), mortgage interest (USD/year), property taxes (USD/year), operating expenses (USD/sqft/year), marketing/leasing costs (USD/year).
+4. Industrial
+    • Customer Segments:
+        ◦ Parameters: Industry type (manufacturing, logistics, tech - categorical), tenant size (sqft), clear height required (feet), loading dock needs (number/type), power requirements (amps), access to transportation (distance to highway/port/rail - miles).
+    • Value Propositions:
+        ◦ Parameters: Building functionality score (based on specifications), strategic location rating (access to transport networks), scalability options (expansion potential - yes/no), security level (rating 1-5).
+    • Channels:
+        ◦ Parameters: Specialized broker network reach (number of contacts), online industrial listing effectiveness (leads/listings), industry event participation (number/year).
+    • Customer Relationships:
+        ◦ Parameters: Lease term length (years), build-to-suit customization level (rating 1-5), property management responsiveness to operational needs (rating 1-5).
+    • Revenue Streams:
+        ◦ Parameters: Base rental rate (USD/sqft/year), build-to-suit fees (USD), specialized service fees (USD/year).
+    • Key Resources:
+        ◦ Parameters: Land location (proximity to transport), building specifications (clear height, loading docks), infrastructure capacity (power, utilities), specialized property management expertise (years of experience).
+    • Key Activities:
+        ◦ Parameters: Site selection score (from MCDA), financing secured (USD), construction efficiency (time to completion - months), leasing rate (%/month).
+    • Key Partnerships:
+        ◦ Parameters: Relationship strength with logistics providers, industrial construction cost efficiency, utility provider reliability (uptime %).
+    • Cost Structure:
+        ◦ Parameters: Land acquisition cost (USD), specialized construction costs (USD/sqft), infrastructure development costs (USD), operating expenses (USD/sqft/year).
+
+5. Hotels & Hospitality
+    • Customer Segments:
+        ◦ Parameters: Average guest length of stay (nights), business vs. leisure guest mix (%), average spending per guest (USD/stay), group bookings %, loyalty program membership %.
+    • Value Propositions:
+        ◦ Parameters: Average daily rate (ADR) (USD), occupancy rate (%), amenity offerings (number of restaurants, pools - yes/no, business centers - yes/no), guest satisfaction scores (1-5 scale), location attractiveness (proximity to attractions, business centers).

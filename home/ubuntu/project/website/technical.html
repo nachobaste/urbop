@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation - Odoo ERP Integration with MCDA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">URBOP Integration</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="guide.html">Comprehensive Guide</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="technical.html">Technical Documentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="user-manual.html">User Manual</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="content-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1>Technical Documentation</h1>
+                    <p class="lead">Detailed technical specifications for implementing Odoo ERP integration with MCDA</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <div class="row">
+            <!-- Table of Contents Sidebar -->
+            <div class="col-lg-3">
+                <div class="toc sticky-top" style="top: 80px;">
+                    <h3>Table of Contents</h3>
+                    <ul>
+                        <li><a href="#overview">1. Overview</a></li>
+                        <li><a href="#system-requirements">2. System Requirements</a></li>
+                        <li><a href="#installation-guide">3. Installation Guide</a></li>
+                        <li><a href="#custom-module-development">4. Custom Module Development</a></li>
+                        <li><a href="#api-integration">5. API Integration</a></li>
+                        <li><a href="#database-schema">6. Database Schema</a></li>
+                        <li><a href="#troubleshooting">7. Troubleshooting</a></li>
+                        <li><a href="#backup-recovery">8. Backup and Recovery</a></li>
+                        <li><a href="#security">9. Security Considerations</a></li>
+                        <li><a href="#maintenance">10. Maintenance Procedures</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Content Area -->
+            <div class="col-lg-9 content-section">
+                <section id="overview">
+                    <h2>1. Overview</h2>
+                    <p>This technical documentation provides detailed information for developers and system administrators implementing the integration between Odoo ERP and Multi-Criteria Decision Analysis (MCDA) systems for site selection, business model structuring, and portfolio management in Guatemala.</p>
+                    
+                    <p>The documentation covers system requirements, installation procedures, custom module development, API integration, database schema, troubleshooting, backup and recovery, security considerations, and maintenance procedures.</p>
+                </section>
+
+                <section id="system-requirements">
+                    <h2>2. System Requirements</h2>
+                    
+                    <h3>2.1 Hardware Requirements</h3>
+                    
+                    <h4>2.1.1 Development Environment</h4>
+                    <ul>
+                        <li>CPU: 4+ cores</li>
+                        <li>RAM: 8GB minimum, 16GB recommended</li>
+                        <li>Storage: 100GB SSD</li>
+                        <li>Network: 100Mbps+ internet connection</li>
+                    </ul>
+                    
+                    <h4>2.1.2 Production Environment</h4>
+                    <ul>
+                        <li>CPU: 8+ cores</li>
+                        <li>RAM: 16GB minimum, 32GB recommended</li>
+                        <li>Storage: 500GB SSD with RAID configuration</li>
+                        <li>Network: 1Gbps+ internet connection with redundancy</li>
+                    </ul>
+                    
+                    <h3>2.2 Software Requirements</h3>
+                    
+                    <h4>2.2.1 Server Software</h4>
+                    <ul>
+                        <li>Operating System: Ubuntu 20.04 LTS or newer</li>
+                        <li>Database: PostgreSQL 12 or newer</li>
+                        <li>Web Server: Nginx 1.18 or newer</li>
+                        <li>Python: 3.8 or newer</li>
+                    </ul>
+                    
+                    <h4>2.2.2 Odoo Requirements</h4>
+                    <ul>
+                        <li>Odoo Version: 15.0 or newer</li>
+                        <li>Odoo Enterprise subscription (recommended for production)</li>
+                        <li>Required Odoo modules: Base, CRM, Project, Accounting, Real Estate (if available)</li>
+                    </ul>
+                </section>
+
+                <section id="installation-guide">
+                    <h2>3. Installation Guide</h2>
+                    
+                    <h3>3.1 Base System Setup</h3>
+                    <p>Begin by setting up the base system with required dependencies:</p>
+                    <pre>
+# Update system
+sudo apt update
+sudo apt upgrade -y
+
+# Install required packages
+sudo apt install -y git python3-pip build-essential wget python3-dev python3-venv \
+    python3-wheel libxslt-dev libzip-dev libldap2-dev libsasl2-dev \
+    python3-setuptools node-less libjpeg-dev zlib1g-dev libpq-dev \
+    libxml2-dev libxslt1-dev libldap2-dev libtiff5-dev libjpeg8-dev \
+    libopenjp2-7-dev liblcms2-dev libwebp-dev libharfbuzz-dev libfribidi-dev \
+    libxcb1-dev postgresql nginx</pre>
+                    
+                    <h3>3.2 PostgreSQL Setup</h3>
+                    <p>Set up the PostgreSQL database:</p>
+                    <pre>
+# Create database user
+sudo -u postgres createuser -s odoo
+
+# Create databases
+sudo -u postgres createdb urbop_dev
+sudo -u postgres createdb urbop_test
+sudo -u postgres createdb urbop_prod
+
+# Set password for odoo user
+sudo -u postgres psql
+postgres=# ALTER USER odoo WITH PASSWORD 'secure_password';
+postgres=# \q</pre>
+                    
+                    <h3>3.3 Odoo Installation</h3>
+                    <p>Install Odoo from source:</p>
+                    <pre>
+# Create odoo user
+sudo useradd -m -d /opt/odoo -U -r -s /bin/bash odoo
+
+# Clone Odoo repository
+sudo git clone --depth 1 --branch 15.0 https://www.github.com/odoo/odoo /opt/odoo/odoo
+
+# Create Python virtual environment
+sudo python3 -m venv /opt/odoo/venv
+sudo /opt/odoo/venv/bin/pip3 install -r /opt/odoo/odoo/requirements.txt
+
+# Create directories
+sudo mkdir -p /opt/odoo/custom/addons
+sudo mkdir -p /var/log/odoo
+sudo chown -R odoo: /opt/odoo/
+sudo chown -R odoo: /var/log/odoo/</pre>
+                </section>
+
+                <section id="custom-module-development">
+                    <h2>4. Custom Module Development</h2>
+                    
+                    <h3>4.1 Module Structure</h3>
+                    <p>Each custom module follows the standard Odoo module structure:</p>
+                    <pre>
+module_name/
+├── __init__.py
+├── __manifest__.py
+├── models/
+│   ├── __init__.py
+│   └── model_files.py
+├── views/
+│   └── view_files.xml
+├── security/
+│   ├── ir.model.access.csv
+│   └── security_rules.xml
+├── data/
+│   └── data_files.xml
+├── static/
+│   ├── description/
+│   │   └── icon.png
+│   ├── src/
+│   │   ├── js/
+│   │   ├── css/
+│   │   └── xml/
+├── controllers/
+│   ├── __init__.py
+│   └── controller_files.py
+└── wizard/
+    ├── __init__.py
+    └── wizard_files.py</pre>
+                    
+                    <h3>4.2 Module Creation</h3>
+                    <p>Create the module scaffolding:</p>
+                    <pre>
+cd /opt/odoo/custom/addons
+/opt/odoo/odoo/odoo-bin scaffold urbop_mcda</pre>
+                    
+                    <h3>4.3 Model Definition</h3>
+                    <p>Example model definition in <code>models/mcda_criteria.py</code>:</p>
+                    <pre>
+from odoo import models, fields, api
+from odoo.exceptions import ValidationError
+
+class MCDACriteria(models.Model):
+    _name = 'mcda.criteria'
+    _description = 'MCDA Criteria'
+    
+    name = fields.Char(string='Criteria Name', required=True)
+    description = fields.Text(string='Description')
+    category = fields.Selection([
+        ('economic', 'Economic'),
+        ('social', 'Social'),
+        ('environmental', 'Environmental'),
+        ('technical', 'Technical'),
+        ('legal', 'Legal'),
+    ], string='Category', required=True)
+    weight = fields.Float(string='Weight', default=1.0)
+    measurement_unit = fields.Char(string='Measurement Unit')
+    min_value = fields.Float(string='Minimum Value')
+    max_value = fields.Float(string='Maximum Value')
+    is_active = fields.Boolean(string='Active', default=True)
+    parent_id = fields.Many2one('mcda.criteria', string='Parent Criteria')
+    child_ids = fields.One2many('mcda.criteria', 'parent_id', string='Sub-Criteria')
+    
+    @api.constrains('weight')
+    def _check_weight(self):
+        for record in self:
+            if record.weight < 0:
+                raise ValidationError("Weight cannot be negative")</pre>
+                </section>
+
+                <section id="api-integration">
+                    <h2>5. API Integration</h2>
+                    
+                    <h3>5.1 RESTful API Controller</h3>
+                    <p>Example controller in <code>controllers/mcda_controller.py</code>:</p>
+                    <pre>
+from odoo import http
+from odoo.http import request
+import json
+
+class MCDAController(http.Controller):
+    
+    @http.route('/api/v1/mcda/criteria', type='http', auth='api_key', methods=['GET'], csrf=False)
+    def get_criteria(self, **kwargs):
+        criteria = request.env['mcda.criteria'].search([('is_active', '=', True)])
+        result = []
+        for criterion in criteria:
+            result.append({
+                'id': criterion.id,
+                'name': criterion.name,
+                'category': criterion.category,
+                'weight': criterion.weight,
+            })
+        return json.dumps(result)
+    
+    @http.route('/api/v1/mcda/evaluate', type='json', auth='api_key', methods=['POST'], csrf=False)
+    def evaluate_site(self, **kwargs):
+        site_id = kwargs.get('site_id')
+        scores = kwargs.get('scores', [])
+        
+        if not site_id:
+            return {'error': 'Site ID is required'}
+        
+        site = request.env['mcda.site'].browse(site_id)
+        if not site.exists():
+            return {'error': 'Site not found'}
+        
+        # Create evaluation
+        evaluation = request.env['mcda.evaluation'].create({
+            'name': f"Evaluation for {site.name}",
+            'site_id': site.id,
+            'state': 'in_progress',
+        })
+        
+        # Create scores
+        for score_data in scores:
+            request.env['mcda.score'].create({
+                'evaluation_id': evaluation.id,
+                'criteria_id': score_data.get('criteria_id'),
+                'value': score_data.get('value'),
+            })
+        
+        evaluation.state = 'completed'
+        
+        return {
+            'evaluation_id': evaluation.id,
+            'total_score': evaluation.total_score,
+        }</pre>
+                    
+                    <h3>5.2 XML-RPC Client Example</h3>
+                    <p>Python client for XML-RPC integration:</p>
+                    <pre>
+import xmlrpc.client
+
+def connect_to_odoo(url, db, username, password):
+    """
+    Connect to Odoo server and return common and models endpoints
+    """
+    common = xmlrpc.client.ServerProxy(f'{url}/xmlrpc/2/common')
+    uid = common.authenticate(db, username, password, {})
+    models = xmlrpc.client.ServerProxy(f'{url}/xmlrpc/2/object')
+    
+    return uid, models
+
+def get_criteria(models, db, uid, password):
+    """
+    Get all active MCDA criteria
+    """
+    return models.execute_kw(db, uid, password, 'mcda.criteria', 'search_read', 
+                            [[['is_active', '=', True]]], 
+                            {'fields': ['id', 'name', 'category', 'weight']})</pre>
+                </section>
+
+                <section id="database-schema">
+                    <h2>6. Database Schema</h2>
+                    
+                    <h3>6.1 MCDA Module Tables</h3>
+                    
+                    <h4>6.1.1 mcda.criteria</h4>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Column Name</th>
+                                <th>Data Type</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>id</td>
+                                <td>Integer</td>
+                                <td>Primary key</td>
+                            </tr>
+                            <tr>
+                                <td>name</td>
+                                <td>Char</td>
+                                <td>Criteria name</td>
+                            </tr>
+                            <tr>
+                                <td>description</td>
+                                <td>Text</td>
+                                <td>Detailed description</td>
+                            </tr>
+                            <tr>
+                                <td>category</td>
+                                <td>Selection</td>
+                                <td>Category (economic, social, etc.)</td>
+                            </tr>
+                            <tr>
+                                <td>weight</td>
+                                <td>Float</td>
+                                <td>Weight for scoring calculation</td>
+                            </tr>
+                            <tr>
+                                <td>measurement_unit</td>
+                                <td>Char</td>
+                                <td>Unit of measurement</td>
+                            </tr>
+                            <tr>
+                                <td>is_active</td>
+                                <td>Boolean</td>
+                                <td>Whether the criteria is active</td>
+                            </tr>
+                            <tr>
+                                <td>parent_id</td>
+                                <td>Many2one</td>
+                                <td>Reference to parent criteria (if any)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h4>6.1.2 mcda.evaluation</h4>
+              
+(Content truncated due to size limit. Use line ranges to read in chunks)

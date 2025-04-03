@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Manual - Odoo ERP Integration with MCDA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">URBOP Integration</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="guide.html">Comprehensive Guide</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="technical.html">Technical Documentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="user-manual.html">User Manual</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="content-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1>User Manual</h1>
+                    <p class="lead">Step-by-step instructions for using the Odoo ERP integration with MCDA</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <div class="row">
+            <!-- Table of Contents Sidebar -->
+            <div class="col-lg-3">
+                <div class="toc sticky-top" style="top: 80px;">
+                    <h3>Table of Contents</h3>
+                    <ul>
+                        <li><a href="#getting-started">1. Getting Started</a></li>
+                        <li><a href="#site-selection">2. Site Selection</a></li>
+                        <li><a href="#business-model-canvas">3. Business Model Canvas</a></li>
+                        <li><a href="#portfolio-management">4. Portfolio Management</a></li>
+                        <li><a href="#reporting-analytics">5. Reporting and Analytics</a></li>
+                        <li><a href="#administration">6. Administration</a></li>
+                        <li><a href="#troubleshooting">7. Troubleshooting</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Content Area -->
+            <div class="col-lg-9 content-section">
+                <section id="getting-started">
+                    <h2>1. Getting Started</h2>
+                    
+                    <h3>1.1 Logging In</h3>
+                    <p>To access the system, follow these steps:</p>
+                    <ol>
+                        <li>Open your web browser and navigate to your Odoo instance URL (e.g., https://your-company.odoo.com)</li>
+                        <li>Enter your username and password</li>
+                        <li>Click "Log in"</li>
+                    </ol>
+                    <div class="text-center mb-4">
+                        <img src="img/login-screen.png" alt="Login Screen" class="img-fluid rounded shadow">
+                    </div>
+                    
+                    <h3>1.2 Dashboard Overview</h3>
+                    <p>After logging in, you will see the main dashboard with access to all modules:</p>
+                    <ul>
+                        <li><strong>MCDA</strong>: Multi-Criteria Decision Analysis for site selection</li>
+                        <li><strong>BMC</strong>: Business Model Canvas for business model structuring</li>
+                        <li><strong>Portfolio</strong>: Portfolio management for real estate assets</li>
+                        <li><strong>Data Hub</strong>: Integration with Guatemala Data Hub</li>
+                    </ul>
+                    
+                    <h3>1.3 Navigation</h3>
+                    <p>The system provides several navigation options:</p>
+                    <ul>
+                        <li>The main menu is located at the top of the screen</li>
+                        <li>Each module has its own submenu with specific functions</li>
+                        <li>Use the search bar at the top to quickly find records or functions</li>
+                        <li>Use breadcrumbs at the top of the page to navigate back to previous screens</li>
+                    </ul>
+                </section>
+
+                <section id="site-selection">
+                    <h2>2. Site Selection</h2>
+                    <p>The Site Selection module uses Multi-Criteria Decision Analysis to evaluate and rank potential development sites.</p>
+                    
+                    <h3>2.1 Creating a New Site</h3>
+                    <ol>
+                        <li>Navigate to <strong>MCDA > Sites > Create</strong></li>
+                        <li>Fill in the site details:
+                            <ul>
+                                <li><strong>Name</strong>: Enter a descriptive name for the site</li>
+                                <li><strong>Location</strong>: Enter the location description or address</li>
+                                <li><strong>Area</strong>: Enter the site area in square meters</li>
+                                <li><strong>Status</strong>: Select the current status (available, reserved, etc.)</li>
+                            </ul>
+                        </li>
+                        <li>Click <strong>Save</strong> to create the site record</li>
+                    </ol>
+                    
+                    <h3>2.2 Importing Site Data from Guatemala Data Hub</h3>
+                    <ol>
+                        <li>Navigate to <strong>MCDA > Sites</strong></li>
+                        <li>Click <strong>Import from Data Hub</strong></li>
+                        <li>Select the location area from the map or enter coordinates</li>
+                        <li>Click <strong>Search</strong> to find available sites</li>
+                        <li>Select the sites you want to import</li>
+                        <li>Click <strong>Import Selected</strong> to create site records</li>
+                    </ol>
+                    
+                    <h3>2.3 Performing Site Evaluation</h3>
+                    <ol>
+                        <li>Navigate to <strong>MCDA > Sites</strong> and select a site</li>
+                        <li>Click the <strong>Evaluate</strong> button</li>
+                        <li>A new evaluation form will open:
+                            <ul>
+                                <li><strong>Name</strong>: Enter a name for this evaluation (auto-filled by default)</li>
+                                <li><strong>Date</strong>: Current date (can be modified if needed)</li>
+                                <li><strong>Evaluator</strong>: Your user (auto-filled by default)</li>
+                            </ul>
+                        </li>
+                        <li>In the <strong>Scores</strong> tab, enter values for each criterion
+                            <ul>
+                                <li>The system will automatically calculate weighted scores</li>
+                                <li>The total score is displayed at the top of the form</li>
+                            </ul>
+                        </li>
+                        <li>Add any notes in the <strong>Notes</strong> tab</li>
+                        <li>Click <strong>Start Evaluation</strong> to begin</li>
+                        <li>After completing all scores, click <strong>Complete</strong> to finalize the evaluation</li>
+                    </ol>
+                    
+                    <h3>2.4 Comparing Multiple Sites</h3>
+                    <ol>
+                        <li>Navigate to <strong>MCDA > Evaluations</strong></li>
+                        <li>Select the evaluations you want to compare (use checkboxes)</li>
+                        <li>Click <strong>Compare Selected</strong></li>
+                        <li>A comparison view will show:
+                            <ul>
+                                <li>Side-by-side scores for each criterion</li>
+                                <li>Total scores for each site</li>
+                                <li>Radar charts visualizing the comparison</li>
+                                <li>Strengths and weaknesses analysis</li>
+                            </ul>
+                        </li>
+                        <li>Click <strong>Generate Report</strong> to create a PDF report of the comparison</li>
+                    </ol>
+                </section>
+
+                <section id="business-model-canvas">
+                    <h2>3. Business Model Canvas</h2>
+                    <p>The Business Model Canvas module helps structure business models for development projects.</p>
+                    
+                    <h3>3.1 Creating a New Canvas</h3>
+                    <ol>
+                        <li>Navigate to <strong>BMC > Canvases > Create</strong></li>
+                        <li>Fill in the basic information:
+                            <ul>
+                                <li><strong>Name</strong>: Enter a name for the canvas</li>
+                                <li><strong>Property</strong>: Select the related property or site</li>
+                                <li><strong>Template</strong>: Select a template based on asset class</li>
+                            </ul>
+                        </li>
+                        <li>Click <strong>Save</strong> to create the canvas</li>
+                    </ol>
+                    
+                    <h3>3.2 Using the Canvas Generator Wizard</h3>
+                    <ol>
+                        <li>Navigate to <strong>BMC > Generate Canvas</strong></li>
+                        <li>Select the property/site for which you want to create a canvas</li>
+                        <li>Select the appropriate template based on asset class</li>
+                        <li>Click <strong>Generate Canvas</strong></li>
+                        <li>The system will pre-fill some elements based on property data</li>
+                        <li>Review and complete the canvas elements</li>
+                    </ol>
+                    
+                    <h3>3.3 Editing Canvas Elements</h3>
+                    <ol>
+                        <li>Open the canvas you want to edit</li>
+                        <li>Each section of the Business Model Canvas is displayed in the form</li>
+                        <li>Click on any section to add or edit elements:
+                            <ul>
+                                <li><strong>Key Partners</strong>: Add organizations that will help your business</li>
+                                <li><strong>Key Activities</strong>: Add activities crucial to your value proposition</li>
+                                <li><strong>Value Propositions</strong>: Add what value you deliver to customers</li>
+                                <li><strong>Customer Relationships</strong>: Add how you interact with customers</li>
+                                <li><strong>Customer Segments</strong>: Add the different groups of people you serve</li>
+                                <li><strong>Key Resources</strong>: Add resources required to deliver your value proposition</li>
+                                <li><strong>Channels</strong>: Add how you communicate with and reach customers</li>
+                                <li><strong>Cost Structure</strong>: Add the costs involved in operating your business</li>
+                                <li><strong>Revenue Streams</strong>: Add how your business generates income</li>
+                            </ul>
+                        </li>
+                        <li>Click <strong>Save</strong> after making changes</li>
+                    </ol>
+                    
+                    <h3>3.4 Analyzing Business Model Viability</h3>
+                    <ol>
+                        <li>Open the canvas you want to analyze</li>
+                        <li>Click the <strong>Analyze</strong> button</li>
+                        <li>The system will evaluate the business model based on:
+                            <ul>
+                                <li>Completeness of all sections</li>
+                                <li>Coherence between sections</li>
+                                <li>Financial viability (based on cost structure and revenue streams)</li>
+                                <li>Market fit (based on customer segments and value propositions)</li>
+                            </ul>
+                        </li>
+                        <li>Review the analysis results in the <strong>Analysis</strong> tab</li>
+                        <li>Based on the results, you can:
+                            <ul>
+                                <li>Click <strong>Validate</strong> to approve the business model</li>
+                                <li>Click <strong>Reject</strong> to mark it as needing revision</li>
+                                <li>Return to editing to make improvements</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </section>
+
+                <section id="portfolio-management">
+                    <h2>4. Portfolio Management</h2>
+                    <p>The Portfolio Management module helps track and analyze your real estate asset portfolio.</p>
+                    
+                    <h3>4.1 Adding Assets to Portfolio</h3>
+                    <ol>
+                        <li>Navigate to <strong>Portfolio > Assets > Create</strong></li>
+                        <li>Fill in the asset details:
+                            <ul>
+                                <li><strong>Name</strong>: Enter a descriptive name for the asset</li>
+                                <li><strong>Property</strong>: Select the related property</li>
+                                <li><strong>Category</strong>: Select the asset category</li>
+                                <li><strong>Acquisition Date</strong>: Enter when the asset was acquired</li>
+                                <li><strong>Acquisition Cost</strong>: Enter the initial cost</li>
+                                <li><strong>Current Value</strong>: Enter the current estimated value</li>
+                                <li><strong>Currency</strong>: Select the currency</li>
+                            </ul>
+                        </li>
+                        <li>Click <strong>Save</strong> to add the asset to your portfolio</li>
+                    </ol>
+                    
+                    <h3>4.2 Categorizing Assets</h3>
+                    <ol>
+                        <li>Navigate to <strong>Portfolio > Categories</strong></li>
+                        <li>To create a new category:
+                            <ul>
+                                <li>Click <strong>Create</strong></li>
+                                <li>Enter a <strong>Name</strong> and <strong>Code</strong> for the category</li>
+                                <li>Select a <strong>Parent Category</strong> if applicable</li>
+         
+(Content truncated due to size limit. Use line ranges to read in chunks)
